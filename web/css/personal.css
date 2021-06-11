@@ -1,0 +1,357 @@
+/* 初始化样式 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+img{
+    /* 去除默认样式 */
+    display: block;
+}
+body{
+    background-image: linear-gradient(to left,#fbd7bf,#86604d);
+}
+
+/* 页头样式 */
+header{
+    background-color: #242424;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 0 10%;
+}
+.header .logo-container{
+    /* 初始宽度50px高度自适应 */
+    flex-basis: 50px;
+}
+.header .logo-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.header .title a{
+    margin-left: 10px;
+    color: #eee;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "宋体";
+}
+.header .title-nav{
+    margin-left: 10px;
+    display: flex;
+}
+.header .title-nav ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+.header .title-nav ul li{
+    display: block;
+    padding: 0 16px;
+    height: 100%;
+}
+.header .title-nav ul li a{
+    display: block;
+    color: #eee;
+    height: 100%;
+
+}
+.header .title-nav ul li a:hover{
+    color: orange;
+    border-bottom: 1px solid #fff;
+}
+.header .search-content{
+    position: relative;
+    flex: 1;
+    margin: 0 20px;
+}
+.header .search-content input{
+    width: 100%;
+    line-height: 40px;
+    border-radius: 20px;
+    text-indent: 2em;
+    border: transparent;
+}
+.header .search-content .search{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.header .create{
+    display: inline-block;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 15px;
+    color: #eee;
+    cursor: pointer;
+}
+.login{
+    display: inline-block;
+    margin-left: 5px;
+    padding: 10px;
+}
+.login a img{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+.personal-container{
+    width: 80%;
+    margin: auto;
+    padding: 36px;
+    margin-top: 30px;
+    border: 2px solid pink;
+}
+.personal-container .form2 ul li{
+    margin: 30px 0;
+}
+/* .personal-container .form2 ul li:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-container ul li:nth-of-type(1) #button{
+    margin-right: 40px;
+} */
+.personal-container .form2 ul li:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-container .form2 ul li:nth-of-type(1) label{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(1) input{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-container .form2 ul li:nth-of-type(2) label{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(2) input{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(3){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-container .form2 ul li:nth-of-type(3) label{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(3) input{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(4){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-container .form2 ul li:nth-of-type(4) label{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(4) textarea{
+    margin: 30px;
+    font-size: 30px;
+    width: 300px;
+}
+.personal-container .form2 ul li:nth-of-type(5){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-container .form2 ul li:nth-of-type(5) label{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(5) input{
+    margin: 30px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(6){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-container .form2 ul li:nth-of-type(6) label{
+    margin: 20px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:nth-of-type(6) input{
+    margin: 20px;
+    font-size: 30px;
+}
+.personal-container .form2 ul li:last-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-container .form2 ul li:last-of-type input{
+
+    height: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: orange;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px 20px;
+}
+.stop{
+    display: none;
+}
+.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 200px;
+}
+
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+
+button {
+    position: relative;
+    top: -32px;
+    left: 220px;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 5px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+
+p {
+    position: relative;
+    color: chartreuse;
+}
+
+@media only screen and (max-width:1200px){
+    .header{
+        padding: 8px 15px;
+        margin: 0 5%;
+    }
+    .header .title-nav{
+        display: none;
+    }
+}
+@media only screen and (max-width:800px){
+    .header{
+        padding: 5px 0;
+        padding-right: 10px;
+        margin:0 1%;
+    }
+    .header .title{
+        display: none;
+    }
+    .header .create{
+        display: block;
+    }
+    .login{
+        padding: 0;
+    }
+    .login a img{
+        margin: auto;
+        width: 50%;
+        height: 50px;
+    }
+    .personal-container{
+        display: none;
+    }
+    .stop{
+        display: block;
+    }
+    .stop h1{
+        width: 80%;
+        margin: auto;
+    }
+    .stop p{
+        margin: auto;
+        margin-top: 20px;
+        font-size: 20px;
+        color: orange;
+        padding: 5px 0;
+        text-decoration: underline;
+        text-align: center;
+    }
+       
+}
+
+.profile{
+    position: absolute;
+    top: 0;
+    left: -550px;
+    color: white;
+    text-decoration: underline;
+}

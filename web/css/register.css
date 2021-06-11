@@ -1,0 +1,244 @@
+/* 初始化样式 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+img{
+    /* 去除默认样式 */
+    display: block;
+}
+body{
+    background-color: #f5f5f5;
+}
+
+/* 页头样式 */
+header{
+    background-color: #242424;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 0 10%;
+}
+.header .logo-container{
+    /* 初始宽度50px高度自适应 */
+    flex-basis: 50px;
+}
+.header .logo-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.header .title a{
+    margin-left: 10px;
+    color: #eee;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: "宋体";
+}
+.header .title-nav{
+    margin-left: 10px;
+    display: flex;
+}
+.header .title-nav ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+.header .title-nav ul li{
+    display: block;
+    padding: 0 16px;
+    height: 100%;
+}
+.header .title-nav ul li a{
+    display: block;
+    color: #eee;
+    height: 100%;
+
+}
+.header .title-nav ul li a:hover{
+    color: orange;
+    border-bottom: 1px solid #fff;
+}
+.header .search-content{
+    position: relative;
+    flex: 1;
+    margin: 0 20px;
+}
+.header .search-content input{
+    width: 100%;
+    line-height: 40px;
+    border-radius: 20px;
+    text-indent: 2em;
+    border: transparent;
+}
+.header .search-content .search{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.header .create{
+    display: inline-block;
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 15px;
+    color: #eee;
+    cursor: pointer;
+}
+.header .login{
+    display: inline-block;
+    color: #999;
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 10px;
+}
+.header .login a{
+    color: #fff;
+}
+.register-container{
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 16px;
+}
+.register-container .form-header{
+    font-weight: 700;
+    font-size: 40px;
+    color: gray;
+    text-decoration: underline;
+}
+.register-container .yiyou{
+    display: flex;
+    padding-left: 20px;
+}
+.register-container .yiyou em a{
+    display: flex;
+    color: orange;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+.reg_form{
+    width: 80%;
+    margin: 40px auto 0;
+}
+.reg_form label{
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+}
+.reg_form li{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.inp{
+    width: 228px;
+    height: 34px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+.error{
+    color: #df3033;
+    margin-left: 5px;
+}
+.error_ico{
+    display: inline-block;
+    height: 20px;
+    background: url("../img/error") no-repeat;
+    /*行内快居中方式*/
+    vertical-align: middle;
+}
+.safe{
+    padding-left: 194px;
+    color: #b2b2b2;
+}
+.safe em{
+    padding:0 10px;
+    color: #fff;
+    font-weight: 700;
+}
+.stop{
+    display: none;
+    margin-top: 30px;
+    margin: auto;
+}
+.yanzhengma{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.yanzhengma label{
+    padding-right: 20px;
+}
+.yanzhengma img{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 20%;
+}
+.over{
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: underline;
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+@media only screen and (max-width:1200px){
+    .header{
+        padding: 8px 15px;
+        margin: 0 5%;
+    }
+    .header .title-nav{
+        display: none;
+    }
+    .reg_form label{
+        width: 70px;
+    }
+    .register-container{
+        display: none;
+    }
+    .stop{
+        display: block;
+        margin-top: 30px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:800px){
+    .header{
+        padding: 5px 0;
+        padding-right: 10px;
+        margin:0 1%;
+    }
+    .header .title{
+        display: none;
+    }
+    .header .create{
+        display: none;
+    }
+    .reg_form{
+        margin: 5px;
+    }
+    .reg_form label{
+        width: 40px;
+    }
+}

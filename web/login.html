@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1977030_tud6wt0lz8c.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: 100%;
+            height: auto;
+            z-index: -100;
+            -webkit-filter: grayscale(20%);
+        }
+    </style>
+</head>
+
+<body>
+    <video src="./mp3/vm5.mp4" loop="loop" autoplay="autoplay"></video>
+    <div class="form">
+        <h2>login</h2>
+        <div class="icon">
+            <li><a href="javascript:;"><i class="iconfont icongithub"></i></a></li>
+            <li><a href="javascript:;"><i class="iconfont iconcsdn"></i></a></li>
+            <li><a href="javascript:;"><i class="iconfont icongongzhonghao"></i></a></li>
+        </div>
+        <form action="Login" method="post">
+            <input type="text" name="username" placeholder="用户名">
+            <input type="password" name="password" placeholder="密码">
+            <button type="submit ">login</button>
+        </form>
+    </div>
+    <div class="footer">
+        <a href="index.jsp">点我回首页</a>
+        <a href="Register">点我去注册</a>
+    </div>
+    <div class="stop">
+        <img src="./img/error.jpg" alt="">
+        <p>别说话，吻我！</p>
+        <p><a href="index.jsp">点我回首页</a></p>
+    </div>
+</body>
+</html>
